@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1111;
+}
+.b{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: vassu 5s infinite;
+    position: relative;
+}
+@keyframes vassu{
+    0%{
+    top: 0px;
+    left: 0px;
+    background-color: red;
+    }
+    25%{
+        top: 0px;
+        left: 1430px;
+        background-color: aqua;
+
+    }
+    50%{
+        top: 620px;
+        left: 1430px;
+        background-color: blue;
+
+    }
+    75%{
+        top: 620px;
+        left:0px;
+        background-color: burlywood;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+        background-color: antiquewhite;
+
+    }
+}
