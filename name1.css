@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.heart{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 20px 90px red; 
+    animation: he 2s linear infinite;
+    left: 32.5%;
+    top: 23%;
+    z-index:2;
+
+}
+
+.heart::before{
+    height: 70px;
+    width: 70px;
+    background-color:black;
+    top: -50%;
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+}
+.heart::after{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    right: -50%;
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+}
+@keyframes he{
+    0%{
+        transform: rotate(-45deg) scale(1.09);
+
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(1.02);
+    }
+}
+.circle{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    animation: cir 2s linear infinite;
+    position:relative;
+    left:17.5%;
+}
+@keyframes cir{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360);
+        background-color: skyblue;
+
+        transition: 2s;
+
+    }
+}
+.rectangle{
+    height: 600px;
+    width: 600px;
+    background-color:transparent;
+    box-shadow: -10px 20px 90px red;
+    border: 2px solid blue;
+    animation: rec 2s linear infinite ;
+    position:relative ;
+    top: 12%;
+    right: 15%;
+
+}
+@keyframes rec{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360);
+        
+
+        transition: 2s;
+
+    }
+}
+@media screen {
+    .rectangle {
+        height: 600px;
+        width: 600px;
+        
+    }
+}
+
+
+
+
+
+
